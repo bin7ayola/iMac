@@ -1,0 +1,38 @@
+# How to Enable Path Field in Finder "Get Info" Window
+
+You can try the following steps:
+
+1. Open Terminal and type the following command:
+
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+
+2. Press Enter to run the command.
+
+3. Restart Finder by typing the following command in Terminal:
+
+killall Finder
+
+
+4. Press Enter to restart Finder.
+
+5. Open Finder and navigate to the folder you want to see the path for.
+
+6. Click on the folder to select it, and then press Command + I (or right-click and select "Get Info") to open the "Get Info" window.
+
+7. In the "Get Info" window, you should now see a "Where" field that shows the path to the folder.
+
+8. Repeat steps 5-7 for any other folders you want to see the path for.
+
+9. Once you have finished viewing the paths, you can disable the "Path" field in the "Get Info" window by opening Terminal and typing the following command:
+
+defaults delete com.apple.finder _FXShowPosixPathInTitle
+
+
+10. Press Enter to run the command, and then restart Finder by typing the following command in Terminal:
+
+ ```
+ killall Finder
+ ```
+
+This should allow you to see the paths for your folders in the "Get Info" window.
