@@ -26,7 +26,7 @@ I hope this message finds you well. As per our recent conversation, here are the
   </div>
   <pre style="white-space: pre-wrap; word-wrap: break-word; margin: 10px 0;">
     <!-- your code goes here -->
-    defaults write com.apple.screencapture location '/Volumes/HDDName/Screenshots'
+defaults write com.apple.screencapture location /path/to/hdd/folder
   </pre>
 </div>
 
