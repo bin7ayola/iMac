@@ -30,24 +30,6 @@ defaults write com.apple.screencapture location /path/to/hdd/folder
   </pre>
 </div>
 
-<script>
-function copyCode1() {
-  const code = document.querySelector('#code1 pre');
-  const range = document.createRange();
-  range.selectNode(code);
-  window.getSelection().addRange(range);
-  try {
-    document.execCommand('copy');
-    console.log('Code 1 copied to clipboard');
-  } catch (err) {
-    console.log('Failed to copy Code 1 to clipboard');
-  }
-  window.getSelection().removeAllRanges();
-}
-</script>
-
-
-
 Replace "HDDName" with the name of your HDD and "/Screenshots" with the name of the folder where you want to store your screenshots. For example, if you want to store screenshots in a folder called "MyScreenshots" on an HDD named "MyHDD", you would use the command:
 
 <!-- Second code block -->
@@ -61,25 +43,6 @@ Replace "HDDName" with the name of your HDD and "/Screenshots" with the name of 
     defaults write com.apple.screencapture location '/Volumes/MyHDD/MyScreenshots'
   </pre>
 </div>
-
-<script>
-function copyCode2() {
-  const code = document.querySelector('#code2 pre');
-  const range = document.createRange();
-  range.selectNode(code);
-  window.getSelection().addRange(range);
-  try {
-    document.execCommand('copy');
-    console.log('Code 2 copied to clipboard');
-  } catch (err) {
-    console.log('Failed to copy Code 2 to clipboard');
-  }
-  window.getSelection().removeAllRanges();
-}
-</script>
-
-
-
 
 7. Restart your Mac for the changes to take effect.
 
